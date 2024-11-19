@@ -1,0 +1,168 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightblue;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    /* background-color: #87ceeb;
+    overflow: hidden; */
+
+    display: none;
+
+
+    border: 2px solid blue;
+    overflow: hidden;
+    background-color: lightblue;
+
+}
+
+
+.fish {
+    position: absolute;
+    transition: transform 0.1s;
+    /* 短い遷移時間を指定 */
+}
+
+#poi {
+    position: absolute;
+    width: 100px;
+    /* 新しい幅 */
+    height: 100px;
+    /* 新しい高さ */
+    background-image: url('poi.png');
+    /* ポイの画像に差し替え */
+    background-size: cover;
+    transition: transform 0.1s;
+}
+
+
+
+
+
+/* 画面全体のスタイル */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+    /* 水色 */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* スタート画面のコンテナ */
+.start-screen {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 半透明の背景 */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FF6347;
+    /* 赤に近い色でタイトル */
+}
+
+/* 説明文のスタイル */
+.description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* スタートボタンのスタイル */
+.start-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #FF4500;
+    /* オレンジレッド */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addfish {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #FF4500;
+    /* オレンジレッド */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    display: none;
+
+}
+
+.start-button:hover {
+    background-color: #FF6347;
+    /* 赤色でホバーエフェクト */
+}
+
+
+#GameBoard {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 半透明の背景 */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    display: none;
+}
+
+#fn {
+    font-size: 1.1em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 半透明の背景 */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    display: none;
+}
+
+#home {
+    /* padding: 15px 30px; */
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #FF4500;
+    /* オレンジレッド */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+#home:hover {
+    background-color: #FF6347;
+    /* 赤色でホバーエフェクト */
+}
+
+#finishscore {
+    font-size: 1.2em;
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金魚すくいゲーム</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <div class="start-screen" id="startScreen">
+        <div class="title">金魚すくいゲーム</div>
+        <div class="description">矢印キーでポイを動かし、エンターキーで金魚をすくいましょう！</div>
+        <!-- <div id="bestscore">ベストスコア: 0匹</div> -->
+
+        <button class="start-button" id="startButton" onclick="startGame()">スタート</button>
+    </div>
+
+    <div>
+        <div id="imageContainer" class="image-container"></div>
+
+        <div id="fn">
+            <div id="finishscore"></div>
+            <button id="home">ホームへ</button>
+
+        </div>
+
+
+        <div id="GameBoard">
+            <div id="timer">残り時間: 30秒</div>
+            <div id="scoreBoard">金魚: 0匹</div>
+        </div>
+
+
+    </div>
+
+
+    <div id="gameContainer">
+
+        <div id="poi"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
